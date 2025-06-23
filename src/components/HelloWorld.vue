@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>{{ msg }}</h1>
-
     <div class="card">
       <button type="button" @click="incrementCount">count is {{ count }}</button>
       <p>
@@ -15,19 +14,19 @@
 <script>
 export default {
   props: {
-    msg: String
+    msg: String,
   },
   data() {
     return {
-      count: 0
-    }
+      count: 0,
+    };
   },
   methods: {
     incrementCount() {
-      this.count++
-    }
-  }
-}
+      this.count++;
+    },
+  },
+};
 </script>
 
 <style scoped>
